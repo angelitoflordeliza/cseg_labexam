@@ -1,0 +1,68 @@
+/* ==============================
+   GLOBAL STYLES - CUPHEAD STYLE
+============================== */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff8e7;
+    text-align: center;
+    background: radial-gradient(circle at top, #3b2f2f, #000);
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    background: #2b1f1f;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #fff8e7 inset;
+    position: relative;
+    z-index: 0;
+}
+
+.screen {
+    margin-top: 50px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+#decision-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff8e7;
+    background: rgba(50, 30, 30, 0.95);
+    padding: 25px;
+    border: 3px solid #fff8e7;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 10;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background: #3a2a2a;
+    color: #fff8e7;
+    border: 2px solid #fff8e7;
+    padding: 10px 25px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #000;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #fff8e7;
+    color: #3a2a2a;
+    transform: scale(1.05);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightrunner: The Shifting Path</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="intro-screen" class="screen">
+    <h1>Lightrunner: The Shifting Path</h1>
+    <p id="story-text">
+        In the Neon Dunes, a lone Runner carries a spark of fading light.
+        The world has been dimming for ages, and only by crossing the shifting trails
+        can the Runner restore balance.<br><br>
+        Your choices shape the dune’s colors, sounds, and fate.
+    </p>
+
+    <h2>Instructions</h2>
+    <p>
+        • Use <b>Arrow Keys</b> to move left and right.<br>
+        • Avoid obstacles.<br>
+        • Reach the end of the track.<br>
+        • Make decisions when prompted.<br><br>
+        <button id="start-btn">Begin Journey</button>
+    </p>
+</div>
+
+<canvas id="gameCanvas" width="800" height="500"></canvas>
+
+<div id="decision-box" class="hidden">
+    <p id="decision-text"></p>
+    <button id="choiceA">Choice A</button>
+    <button id="choiceB">Choice B</button>
+</div>
+
+<div id="ending-screen" class="screen hidden">
+    <h1 id="ending-title"></h1>
+    <p id="ending-text"></p>
+    <button onclick="location.reload()">Restart</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
